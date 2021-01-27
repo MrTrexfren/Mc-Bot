@@ -4,7 +4,7 @@ import time
 
 members = []
 times = [2, 4, 6]
-says = ["Hi!", "hello", "Wanna go to a Movie?"]
+says = ["Hi!", "hello", "Wanna go to a Movie?", "Wanna fight the Ender Dragon", "Lets eat!"]
 done = False
 num_of_members = 0
 
@@ -25,6 +25,12 @@ while not done:
        members.append(new_member)
        num_of_members += 1
 
+time.sleep(3)
+pyautogui.press("t")
+pyautogui.typewrite("Bot Activated")
+pyautogui.press("enter")
+pyautogui.press("esc")
+
 while True:
     pyautogui.press("t")
     pyautogui.typewrite(random.choice(says))
@@ -33,8 +39,6 @@ while True:
     pyautogui.press("enter")
     pyautogui.press("esc")
     time.sleep(random.choice(times))
-
-
 
 
     
