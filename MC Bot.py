@@ -3,6 +3,7 @@ import random
 import time
 
 members = []
+times = [2, 4, 6]
 says = ["Hi!", "hello", "Wanna go to a Movie?"]
 done = False
 num_of_members = 0
@@ -31,7 +32,9 @@ while True:
     pyautogui.typewrite(random.choice(members))
     pyautogui.press("enter")
     pyautogui.press("esc")
-    time.sleep(2)
+    time.sleep(random.choice(times))
+
+
 
 
     
